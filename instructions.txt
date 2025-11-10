@@ -1,0 +1,44 @@
+Инструкции по запуску проекта
+
+## Требования:
+- Python
+- numpy
+- pandas
+- torch
+- gpytorch
+- scikit-learn
+- matplotlib
+- scipy
+
+-Создайте виртуальное окружение и ктивируйте его
+-Запуск проекта:
+1.  Убедитесь, что вы находитесь в корневой директории проекта.
+2.  Запустите основной скрипт:
+    'python src/main.py'
+
+(Этот скрипт сгенерирует данные, проведет эксперименты по пассивному и активному обучению, а также сгенерирует графики)
+
+Результаты:
+
+Все сгенерированные графики и данные будут сохранены в корневой директории проекта:
+- sample_efficiency_comparison_final.png (основной график сравнения эффективности)
+- brier_score_comparison.png (график Brier Score)
+- ece_score_comparison.png (график ECE)
+- calibration_curves.png (график калибровочных кривых)
+
+Исходные данные симулятора и реальных исходов будут находиться в `data/raw/` после первого запуска.
+
+----------------------------------------------------------------------------------------
+python3 -m venv venv
+source venv/bin/activate
+
+pip install --upgrade pip
+
+pip install numpy
+pip install pandas
+pip install torch
+pip install gpytorch
+pip install scikit-learn
+pip install matplotlib
+pip install scipy
+----------------------------------------------------------------------------------------
